@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>toDo App</title>
+</head>
+<body>    
+    <div class="wrapper">
+
+        <h2>Your Medical Board Examination Is Coming up In:</h2>
+
+        <div id="countdown" class="countdown">
+            <div class="countitem">
+                <h3 class="smalltext">Days</h3>
+                <span class="days numbers"></span>
+            </div>
+            <div class="countitem">
+                <h3 class="smalltext">Hours</h3>
+                <span class="hours numbers"></span>
+            </div>
+            <div class="countitem">
+                <h3 class="smalltext">Minutes</h3>
+                <span class="minutes numbers"></span>
+            </div>
+            <div class="countitem">
+                <h3 class="smalltext">Seconds</h3>
+                <span class="seconds numbers"></span>
+            </div>
+        </div>
+
+        <h2>List Of Courses You Must Cover</h2>
+
+        <input type="text" id="new-todo" class="new-todo" placeholder="Add new topic you wish to cover...">
+        <button id="refresh">Refresh</button>
+        <button id="add-todo">Add</button>
+
+        <ul id="todo-list"></ul>
+
+        <label for="level">Check this box if you're in 300L</label>
+        <input type="checkbox" id="userLevel">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
