@@ -9,7 +9,7 @@ let todoItems = [
   { text: 'MALE REPRODUCTIVE SYSTEM', iscompleted: false },
   { text: 'FEMALE REPRODUCTIVE SYSTEM', iscompleted: false },
   { text: 'MENSTRUATION & FERTILIZATION', iscompleted: false },
-  { text: 'WEEK 1 TO WEEK 8', iscompleted: false },
+  { text: 'Embryogenesis Week 1 - 8', iscompleted: false },
   { text: 'MUSCULAR SYSTEM', iscompleted: false },
   { text: 'SKELETAL SYSTEM', iscompleted: false },
   { text: 'UROGENITAL SYSTEM', iscompleted: false },
