@@ -90,6 +90,13 @@ if (localStorage.getItem('todoItems')) {
   todoItems = JSON.parse(localStorage.getItem('todoItems'));
 }
 
+// Load user level from local storage, if available
+if (localStorage.getItem("userLevel")){
+  levelChecker.checked = JSON.parse(localStorage.getItem("userLevel"));
+  renderTodoList();
+} 
+
+
 // Render the initial list of todo items
 renderTodoList();
 
@@ -149,26 +156,27 @@ function renderTodoList() {
 function handleLevel(){
   levelChecker.addEventListener("change", () =>{
     if (levelChecker.checked === true){
-      for (let item of level3Courses){
-        todoItems.push(item);
-      }
+      todoItems.push(...level3Courses);
+      saveTodoItems();
       renderTodoList();
-      setInterval(updateCountdown, 1000);
     } else {
-      for (let item of level3Courses){
-        todoItems.pop(item);
-      }
+      todoItems.splice(todoItems.length - level3Courses.length, level3Courses.length);
+      saveTodoItems();
       renderTodoList();
-      setInterval(updateCountdown, 1000);
     }
+    saveUserLevel()
   })
 }
 handleLevel()
 
-//I'm a badAss developer ,man! :)
 // Function to save the todo items to local storage
 function saveTodoItems() {
   localStorage.setItem('todoItems', JSON.stringify(todoItems));
+}
+
+// Function to save the user level to local storage
+function saveUserLevel(){
+  localStorage.setItem("userLevel", JSON.stringify(levelChecker.checked))
 }
 
 // Countdown function
@@ -224,9 +232,9 @@ function updateCountdown() {
   
 // Call the updateCountdown() function every second
 setInterval(updateCountdown, 1000);
-//Perfect!!!
 
 refreshBtn.addEventListener("click", ()=>{
   localStorage.removeItem("todoItems");
+  localStorage.removeItem("userLevel");
   location.reload();
 })
