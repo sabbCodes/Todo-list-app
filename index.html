@@ -26,37 +26,43 @@
 <body>    
     <div class="wrapper">
 
-        <h2>Your Medical Board Examination Is Coming up In:</h2>
+        <div class="header">
+            <h2 id="mainTitle">Your Medical Board Examination Is Coming up In:</h2>
 
-        <div id="countdown" class="countdown">
-            <div class="countitem">
-                <h3 class="smalltext">Days</h3>
-                <span class="days numbers"></span>
+            <div id="countdown" class="countdown">
+                <div class="countitem">
+                    <h3 class="smalltext">Days</h3>
+                    <span class="days numbers"></span>
+                </div>
+                <div class="countitem">
+                    <h3 class="smalltext">Hours</h3>
+                    <span class="hours numbers"></span>
+                </div>
+                <div class="countitem">
+                    <h3 class="smalltext">Minutes</h3>
+                    <span class="minutes numbers"></span>
+                </div>
+                <div class="countitem">
+                    <h3 class="smalltext">Seconds</h3>
+                    <span class="seconds numbers"></span>
+                </div>
             </div>
-            <div class="countitem">
-                <h3 class="smalltext">Hours</h3>
-                <span class="hours numbers"></span>
-            </div>
-            <div class="countitem">
-                <h3 class="smalltext">Minutes</h3>
-                <span class="minutes numbers"></span>
-            </div>
-            <div class="countitem">
-                <h3 class="smalltext">Seconds</h3>
-                <span class="seconds numbers"></span>
-            </div>
+
+            <h2 id="listTitle">List Of Courses You Must Cover</h2>
+
+            <input type="text" id="new-todo" class="new-todo" placeholder="Add new topic you wish to cover...">
+            <button id="refresh">Refresh</button>
+            <button id="add-todo">Add</button>
         </div>
 
-        <h2>List Of Courses You Must Cover</h2>
+        <div class="list">
+            <ul id="todo-list"></ul>
+        </div>
 
-        <input type="text" id="new-todo" class="new-todo" placeholder="Add new topic you wish to cover...">
-        <button id="refresh">Refresh</button>
-        <button id="add-todo">Add</button>
-
-        <ul id="todo-list"></ul>
-
-        <label for="level">Check this box if you're in 300L</label>
-        <input type="checkbox" id="userLevel">
+        <div class="userLevel">
+            <label for="level">Check this box if you're in 300L</label>
+            <input type="checkbox" id="userLevel">
+        </div>
     </div>
 
     <footer class="footer">
