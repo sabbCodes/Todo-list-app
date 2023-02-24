@@ -16,19 +16,22 @@ html, body{
     width: 430px;
     background-color: #000d26;
     border-radius: 12px;
-    margin: 0 auto;
+    margin: 5px auto;
 }
 
 .header{
     background-image: url(stethoscope.jpg);
+    background-color: #222a39;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-blend-mode: color-dodge;
     width: 100%;
     padding: 10px 25px;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 3px 3px 3px black;
+    color: #fff;
 }
 
 .list{
@@ -37,6 +40,7 @@ html, body{
 
 #listTitle{
     margin: 40px 0 10px 0;
+    font-size: 23px;
 }
 
 #mainTitle{
@@ -55,6 +59,7 @@ html, body{
     font-family: Cursed;
     color: rgb(255, 0, 0);
     font-size: x-large;
+    text-shadow: none;
 }
 
 h3{
@@ -77,6 +82,7 @@ h3{
 button{
     width: 47.5%;
     height: 4vh;
+    outline: none;
     border-radius: 7px;
     margin-top: 6px;
     font-size: 15px;
