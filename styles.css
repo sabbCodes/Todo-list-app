@@ -10,25 +10,30 @@ html, body{
     background-position: center;
     font-family: 'Montserrat', sans-serif;
     color: rgba(250, 250, 250, .7);
+    min-width: 100vw;
 }
 
 .wrapper{
-    width: 430px;
-    background-color: #000d26;
+    width: 95vw;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .9);
     border-radius: 12px;
-    margin: 0 auto;
+    margin: 5px auto;
 }
 
 .header{
     background-image: url(stethoscope.jpg);
+    background-color: #222a39;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-blend-mode: color-dodge;
     width: 100%;
     padding: 10px 25px;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 3px 3px 3px black;
+    color: #fff;
 }
 
 .list{
@@ -37,6 +42,7 @@ html, body{
 
 #listTitle{
     margin: 40px 0 10px 0;
+    font-size: 23px;
 }
 
 #mainTitle{
@@ -55,10 +61,21 @@ html, body{
     font-family: Cursed;
     color: rgb(255, 0, 0);
     font-size: x-large;
+    text-shadow: none;
 }
 
 h3{
     margin: 0 0 5px 0;
+}
+
+.newItems{
+    width: 100%;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .new-todo{
@@ -77,6 +94,7 @@ h3{
 button{
     width: 47.5%;
     height: 4vh;
+    outline: none;
     border-radius: 7px;
     margin-top: 6px;
     font-size: 15px;
@@ -91,7 +109,7 @@ button:hover,
 button:focus{
     cursor: pointer;
     transform: scale(1.05);
-    transition: transform .5s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 #refresh{
@@ -113,6 +131,7 @@ ul{
     margin-left: 10px;
     background-color: rgb(255, 255, 255);
     border-radius: 9px;
+    box-shadow: 1px 1px 1px #000d26;
     margin: 5px auto;
     padding: 5px 7px;
     text-shadow: 1px 1px 1px white;
@@ -131,7 +150,9 @@ input[type="checkbox"] {
 }
 
 .userLevel{
-    
+    color: rgba(0, 0, 0, .9);
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    font-size: larger;
     padding: 0 25px 10px 25px;
 }
 
@@ -142,6 +163,7 @@ input[type="checkbox"] {
     text-align: center;
     padding: 2.5em 0;
     margin-top: 5px;
+    width: 100vw;
 }
 
 .footer a { 
@@ -177,4 +199,10 @@ input[type="checkbox"] {
 
 .social-list__link {
     padding: .5em;
+}
+
+@media (min-width: 800px) {
+    .wrapper{
+        width: 450px;
+    }
 }
