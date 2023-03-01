@@ -25,7 +25,7 @@ let todoItems = [
   { text: 'Bone histology', iscompleted: false },
   { text: 'MUSCULAR system', iscompleted: false },
   { text: 'NERVOUS system', iscompleted: false },
-  { text: 'integumentary system', iscompleted: false },
+  { text: 'Integumentary system', iscompleted: false },
   { text: 'Cardiovascular system', iscompleted: false },
   { text: 'Respiratory system', iscompleted: false },
   { text: 'Lymphatic system', iscompleted: false },
