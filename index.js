@@ -183,7 +183,7 @@ function updateCountdown() {
     if (levelChecker.checked === true){
       return "2023-04-03";
     } else {
-      return "2023-05-15";
+      return "2023-05-22";
     }
   }
   
