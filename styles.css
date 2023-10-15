@@ -108,9 +108,8 @@ ul{
 
 .list li{
     list-style-type: none;
-    margin-left: 10px;
     background-color: rgb(255, 255, 255);
-    border-radius: 9px;
+    border-radius: 6px;
     box-shadow: 1px 1px 1px #000d26;
     margin: 5px auto;
     padding: 5px 7px;
@@ -188,12 +187,16 @@ h3{
     color: white;
 }
 
-.footer__link:hover,
+.footer__link{
+    font-size: 1.2rem;
+}
+
+.footer__link > a:hover,
 .social-list__link:hover {
     opacity: .7;
 }
 
-.footer__link:hover {
+.footer__link > a:hover {
     text-decoration: underline;
 }
 

@@ -94,7 +94,7 @@ if (localStorage.getItem('todoItems')) {
 if (localStorage.getItem("userLevel")){
   levelChecker.checked = JSON.parse(localStorage.getItem("userLevel"));
   renderTodoList();
-} 
+}
 
 
 // Render the initial list of todo items
@@ -115,7 +115,7 @@ function addTodoItem(text) {
   const todoItem = {
     text, isCompleted: false
   };
-  
+
   // Add the item to the list
   todoItems.unshift(todoItem);
 
@@ -181,12 +181,12 @@ function updateCountdown() {
   // Set the date to countdown to (YYYY-MM-DD format)
   function getCountdownDate(){
     if (levelChecker.checked === true){
-      return "2023-04-03";
+      return "2024-01-22";
     } else {
-      return "2023-05-22";
+      return "2024-05-27";
     }
   }
-  
+
   // Select HTML elements
   const daysSpan = document.querySelector('.days');
   const hoursSpan = document.querySelector('.hours');
@@ -259,7 +259,7 @@ function updateCountdown() {
     };
   }
 }
-  
+
 // Call the updateCountdown function every second
 setInterval(updateCountdown, 1000);
 
