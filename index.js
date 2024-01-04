@@ -181,7 +181,7 @@ function updateCountdown() {
   // Set the date to countdown to (YYYY-MM-DD format)
   function getCountdownDate(){
     if (levelChecker.checked === true){
-      return "2024-01-22";
+      return "2024-02-12";
     } else {
       return "2024-05-27";
     }
